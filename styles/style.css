@@ -4,14 +4,19 @@
     color: white;
 }
 .section_1{
-    background: url(images/bg.png);
+    background-image: linear-gradient(rgba(98, 20, 2, 0.11), rgba(133, 3, 3, 0.9)), url(images/bg.png);
     background-repeat: no-repeat;
     background-size: cover;
 
 }
 header{
     display: flex;
-    justify-content: center;
+    justify-content: center;   
+}
+hr{
+    border-color: rgba(220, 220, 220, 0);
+    background: rgba(220, 220, 220, 0.309);
+    height: 1px;
 }
 p{
     font-size: 19px;
@@ -38,15 +43,22 @@ h1, h2{
     align-items: center;
     justify-content: flex-end;
     margin-top: 1.5%;
+
 }
 header a{
     text-decoration: none;
     color: white;
     font-size: 18px;
+    transition: 0.3s;
+    font-size: 1.25vw;
+}
+header a:hover{
+    color: #FE8E05;
+    transition: 0.3s;
 }
 .profil p{
     color: white;
-    font-size: 20px;
+    font-size: 1.25vw;
     margin-right: 2.5%;
 }
 main{
@@ -86,6 +98,7 @@ main{
     transition: 0.3s;
 }
 .splitTime{
+    font-size: 1vw;
     width: 40%;
     display: flex;
     justify-content: space-between;
@@ -101,10 +114,11 @@ main{
     width: 100%;
 }
 .rate{
-    font-size: 20px;
+    font-size: 1.25vw;
     font-weight: bold;
 }
 .delitel{
+    font-size: 1vw;
     margin-left: -5%;
 }
 hr, .cinemaInfo{
@@ -141,22 +155,26 @@ hr, .cinemaInfo{
     user-select: none;
     transition: 0.2s;
 }
+.date p, .cinema p, .time p{
+    font-size: 1.25vw;
+}
 .date span{
-    font-size: 28px;
+    font-size: 1.5vw;
     font-weight: bold;
 }
 .day:hover{
     background: rgb(255, 128, 0);
     transition: 0.2s;
 }
-
 select{
     background: rgba(202, 200, 200, 0.25);
     border: solid white 1px;
     border-radius: 5px;
     cursor: pointer;
     padding: 15px;
+    font-size: 1vw;
 }
+
 option{
     background: rgb(63, 63, 63);
 }
@@ -164,4 +182,132 @@ option{
     display: flex;
     align-items: center;
     height: 70%;
+}
+footer{
+    background: linear-gradient(rgba(127, 3, 3, 0.985), rgb(118, 2, 2));
+    padding: 5%;
+}
+.select1 .selectAdress{
+    width: 80%;
+}
+.sit{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+    padding: 2.5% 0 5%;
+    background: rgba(78, 1, 1, 0.681);
+    border-radius: 10px;
+}
+.sit img{
+    width: 85%;
+    margin: 0 auto;
+}
+.sit hr{
+    margin-top: 2.5%;
+}
+.sit .monitor{
+    border-color: rgba(78, 1, 1, 0);
+    background: rgb(59, 1, 1);
+    height: 5px;
+    width: 95%;
+    margin-top: 0;
+}
+table{
+    user-select: none;
+}
+.tableSecondOne{
+    display: flex;
+}
+.tablePrimary{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin: 2.5% auto;
+}
+.tableSecond{
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+input[type="radio"]{
+    display: none;
+}
+
+input[type="radio"]:checked + .day{
+  background: #FE8E05;
+}
+
+.day.active, .day.active p, .day.active p span{
+    background: rgb(255, 128, 0);
+    color: rgb(127, 2, 2);
+}
+.chair.enabled img{
+   background: url(images/seat.png);
+   border-radius: 5px;
+}
+.chair img:hover{
+    background: url(images/seat.png);
+    border-radius: 5px;
+    cursor: pointer;
+}
+td{
+    width: 1%;
+}
+td img{
+    width: 100%;
+    padding: 7.5% 0 7.5%;
+}
+.itogo{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 2.5%;
+}
+.itogoLevo, .itogoPravo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.itogoPravo{
+    align-items: flex-end;
+    justify-content: center;
+}
+.itogoPravo a{
+    padding: 2.5% 7.5%;
+    background: rgb(255, 128, 0);
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+.cena{
+    font-size: 50px;
+}
+
+.legend{
+    display: flex;
+    width: 90%;
+    justify-content: flex-start;
+    margin: 3% auto 0;
+}
+.main-legend{
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+}
+
+.main-legend div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-legend div span{
+    padding-left: 5%;
+}
+
+.main-legend div div img{
+    width: 80%;
 }
