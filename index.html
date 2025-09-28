@@ -1,54 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cinema</title>
     <link rel="stylesheet" href="styles/style.css">
 </head>
+
 <body>
     <div class="section_1">
         <header>
             <div class="navigation">
                 <img src="images/logo.png" alt="">
-                <a href="">Главная</a>
-                <a href="">Фильмы</a>
-                <a href="">Кинотеатры</a>
-                <a href="">События</a>
-                <a href="">Поддержка</a>
+                <button class="bat-nav">&#9776;</button>
+                <div class="menu">
+                    <a href="">Главная</a>
+                    <a href="">Фильмы</a>
+                    <a href="">Кинотеатры</a>
+                    <a href="">События</a>
+                    <a href="">Поддержка</a>
+                </div>
             </div>
             <div class="profil">
                 <p>Привет, Дима</p>
                 <img src="images/Rectangle 1.png" alt="">
             </div>
         </header>
+
         <main>
-            
             <div class="splitPrimaryMain">
                 <div class="splitMainText">
                     <h1>Avengers: Infinity War</h1>
                     <h2>Мстители: война бесконечности</h2>
                     <p> Пока мстители и их союзники продолжают защищать мир от различных опасностей,
-                        с которыми не смог бы справиться  один супергерой, новая угроза возникает из космоса:
-                        Танос. Межгалактический тиран преследует цель собрать все шесть Камней Бесконечности - 
+                        с которыми не смог бы справиться один супергерой, новая угроза возникает из космоса:
+                        Танос. Межгалактический тиран преследует цель собрать все шесть Камней Бесконечности -
                         артефакты невероятной силы, с помощью которых можно менять реальность по своему желанию.
                         Всё, с чем Мстители сталкивались ранее, вело к этому моменту - судьба Земли никогда ещё
                         не была столь неопределённой.
                     </p>
                     <p class="splitTime">
-                        <span  class="imgTime"><img src="images/clock 1.png" alt=""></span> 240 мин. <span class="imgTime"><img src="images/imdb.png" alt=""></span> 
+                        <span class="imgTime"><img src="images/clock 1.png" alt=""></span> 240 мин. <span
+                            class="imgTime"><img src="images/imdb.png" alt=""></span>
                         <span class="rate">9.2 /</span> <span class="delitel">10</span>
                     </p>
                 </div>
+
                 <div class="splitMainImg">
                     <div class="splitImg">
-                        <a href="">
+                        <a href="#" onclick="video()">
                             <img src="images/play-button.png" alt="">
                         </a>
                     </div>
+                    <iframe class="trailer" id="vidos"
+                        src="https://rutube.ru/play/embed/73d4606d8ce3449d693346ba0abeabde"
+                        allow="clipboard-write; autoplay" allowFullScreen></iframe>
                 </div>
             </div>
+
             <hr>
+
             <div class="cinemaInfo">
                 <div class="date">
                     <p>Дата</p>
@@ -75,15 +87,18 @@
                         </div>
                     </div>
                 </div>
-                <div  class="cinema">
+
+                <div class="cinema">
                     <p>Кинотеатр</p>
                     <div class="select1">
-                        <select name="" id="">
-                            <option value="">Владимирский централ 52</option>
+                        <select name="" id="" class="selectAdress">
+                            <option value="">Владимирский централ, 52</option>
+                            <option value="">Арбат, дом 23</option>
+                            <option value="">Партизанская ул., д. 17</option>
                         </select>
                     </div>
-                    </select>
                 </div>
+
                 <div class="time">
                     <p>Время</p>
                     <div class="select1">
@@ -96,221 +111,231 @@
                     </div>
                 </div>
             </div>
+
             <hr>
+
         </main>
     </div>
 
     <footer>
         <div class="sit">
-            <hr class="monitor">
-            <img src="images/light.png" alt="">
+            <div class="LightScreen">
+                <hr class="monitor">
+                <img class="Light" src="images/light.png" alt="">
+            </div>
             <div class="tablePrimary">
                 <table class="firstTable">
                     <tr>
-                            <td class="chair"><img src="images/seat.png" alt=""></td>
-                            <td class="chair"><img src="images/seat.png" alt=""></td>
-                            <td class="chair"><img src="images/seat.png" alt=""></td>
-                            <td class="chair"><img src="images/seat.png" alt=""></td>
-                            <td class="chair"><img src="images/seat.png" alt=""></td>
-                            <td class="chair"><img src="images/seat.png" alt=""></td>
-                            <td class="chair"><img src="images/seat.png" alt=""></td>
-                            <td class="chair"><img src="images/seat.png" alt=""></td>
-                            <td class="chair"><img src="images/seat.png" alt=""></td>
-                            <td class="chair"><img src="images/seat.png" alt=""></td>
-                            <td class="chair"><img src="images/seat.png" alt=""></td>
-                            <td class="chair"><img src="images/seat.png" alt=""></td>
-                            <td class="chair"><img src="images/seat.png" alt=""></td>
-                            <td class="chair"><img src="images/seat.png" alt=""></td>
-                            <td class="chair"><img src="images/seat.png" alt=""></td>
-                            <td class="chair"><img src="images/seat.png" alt=""></td>
-                            <td class="chair"><img src="images/seat.png" alt=""></td>
-                            <td class="chair"><img src="images/seat.png" alt=""></td>
-                            <td class="chair"><img src="images/seat.png" alt=""></td>
-                        </tr>
-                       <tr>
-                            <td class="chair"><img src="images/seat.png" alt=""></td>
-                            <td class="chair"><img src="images/seat.png" alt=""></td>
-                            <td class="chair"><img src="images/seat.png" alt=""></td>
-                            <td class="chair"><img src="images/seat.png" alt=""></td>
-                            <td class="chair"><img src="images/seat.png" alt=""></td>
-                            <td class="chair"><img src="images/seat.png" alt=""></td>
-                            <td class="chair"><img src="images/seat.png" alt=""></td>
-                            <td class="chair"><img src="images/seat.png" alt=""></td>
-                            <td class="chair"><img src="images/seat.png" alt=""></td>
-                            <td class="chair"><img src="images/seat.png" alt=""></td>
-                            <td class="chair"><img src="images/seat.png" alt=""></td>
-                            <td class="chair"><img src="images/seat.png" alt=""></td>
-                            <td class="chair"><img src="images/seat.png" alt=""></td>
-                            <td class="chair"><img src="images/seat.png" alt=""></td>
-                            <td class="chair"><img src="images/seat.png" alt=""></td>
-                            <td class="chair"><img src="images/seat.png" alt=""></td>
-                            <td class="chair"><img src="images/seat.png" alt=""></td>
-                            <td class="chair"><img src="images/seat.png" alt=""></td>
-                            <td class="chair"><img src="images/seat.png" alt=""></td>
-                        </tr>
-                        <tr>
-                            <td class="chair"><img src="images/seat.png" alt=""></td>
-                            <td class="chair"><img src="images/seat.png" alt=""></td>
-                            <td class="chair"><img src="images/seat.png" alt=""></td>
-                            <td class="chair"><img src="images/seat.png" alt=""></td>
-                            <td class="chair"><img src="images/seat.png" alt=""></td>
-                            <td class="zanyato"><img src="images/seatZanyat.png" alt=""></td>
-                            <td class="zanyato"><img src="images/seatZanyat.png" alt=""></td>
-                            <td class="zanyato"><img src="images/seatZanyat.png" alt=""></td>
-                            <td class="zanyato"><img src="images/seatZanyat.png" alt=""></td>
-                            <td class="zanyato"><img src="images/seatZanyat.png" alt=""></td>
-                            <td class="zanyato"><img src="images/seatZanyat.png" alt=""></td>
-                            <td class="chair"><img src="images/seat.png" alt=""></td>
-                            <td class="chair"><img src="images/seat.png" alt=""></td>
-                            <td class="chair"><img src="images/seat.png" alt=""></td>
-                            <td class="chair"><img src="images/seat.png" alt=""></td>
-                            <td class="chair"><img src="images/seat.png" alt=""></td>
-                            <td class="chair"><img src="images/seat.png" alt=""></td>
-                            <td class="chair"><img src="images/seat.png" alt=""></td>
-                            <td class="chair"><img src="images/seat.png" alt=""></td>
-                        </tr>
-                       <tr>
-                            <td class="chair"><img src="images/seat.png" alt=""></td>
-                            <td class="chair"><img src="images/seat.png" alt=""></td>
-                            <td class="chair"><img src="images/seat.png" alt=""></td>
-                            <td class="chair"><img src="images/seat.png" alt=""></td>
-                            <td class="chair"><img src="images/seat.png" alt=""></td>
-                            <td class="chair"><img src="images/seat.png" alt=""></td>
-                            <td class="chair"><img src="images/seat.png" alt=""></td>
-                            <td class="chair"><img src="images/seat.png" alt=""></td>
-                            <td class="chair"><img src="images/seat.png" alt=""></td>
-                            <td class="chair"><img src="images/seat.png" alt=""></td>
-                            <td class="chair"><img src="images/seat.png" alt=""></td>
-                            <td class="chair"><img src="images/seat.png" alt=""></td>
-                            <td class="chair"><img src="images/seat.png" alt=""></td>
-                            <td class="chair"><img src="images/seat.png" alt=""></td>
-                            <td class="chair"><img src="images/seat.png" alt=""></td>
-                            <td class="chair"><img src="images/seat.png" alt=""></td>
-                            <td class="chair"><img src="images/seat.png" alt=""></td>
-                            <td class="chair"><img src="images/seat.png" alt=""></td>
-                            <td class="chair"><img src="images/seat.png" alt=""></td>
-                        </tr>
+                        <td class="chair"><img src="images/seat.png" alt=""></td>
+                        <td class="chair"><img src="images/seat.png" alt=""></td>
+                        <td class="chair"><img src="images/seat.png" alt=""></td>
+                        <td class="chair"><img src="images/seat.png" alt=""></td>
+                        <td class="chair"><img src="images/seat.png" alt=""></td>
+                        <td class="chair"><img src="images/seat.png" alt=""></td>
+                        <td class="chair"><img src="images/seat.png" alt=""></td>
+                        <td class="chair"><img src="images/seat.png" alt=""></td>
+                        <td class="chair"><img src="images/seat.png" alt=""></td>
+                        <td class="chair"><img src="images/seat.png" alt=""></td>
+                        <td class="chair"><img src="images/seat.png" alt=""></td>
+                        <td class="chair"><img src="images/seat.png" alt=""></td>
+                        <td class="chair"><img src="images/seat.png" alt=""></td>
+                        <td class="chair"><img src="images/seat.png" alt=""></td>
+                        <td class="chair"><img src="images/seat.png" alt=""></td>
+                        <td class="chair"><img src="images/seat.png" alt=""></td>
+                        <td class="chair"><img src="images/seat.png" alt=""></td>
+                        <td class="chair"><img src="images/seat.png" alt=""></td>
+                        <td class="chair"><img src="images/seat.png" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td class="chair"><img src="images/seat.png" alt=""></td>
+                        <td class="chair"><img src="images/seat.png" alt=""></td>
+                        <td class="chair"><img src="images/seat.png" alt=""></td>
+                        <td class="chair"><img src="images/seat.png" alt=""></td>
+                        <td class="chair"><img src="images/seat.png" alt=""></td>
+                        <td class="chair"><img src="images/seat.png" alt=""></td>
+                        <td class="chair"><img src="images/seat.png" alt=""></td>
+                        <td class="chair"><img src="images/seat.png" alt=""></td>
+                        <td class="chair"><img src="images/seat.png" alt=""></td>
+                        <td class="chair"><img src="images/seat.png" alt=""></td>
+                        <td class="chair"><img src="images/seat.png" alt=""></td>
+                        <td class="chair"><img src="images/seat.png" alt=""></td>
+                        <td class="chair"><img src="images/seat.png" alt=""></td>
+                        <td class="chair"><img src="images/seat.png" alt=""></td>
+                        <td class="chair"><img src="images/seat.png" alt=""></td>
+                        <td class="chair"><img src="images/seat.png" alt=""></td>
+                        <td class="chair"><img src="images/seat.png" alt=""></td>
+                        <td class="chair"><img src="images/seat.png" alt=""></td>
+                        <td class="chair"><img src="images/seat.png" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td class="chair"><img src="images/seat.png" alt=""></td>
+                        <td class="chair"><img src="images/seat.png" alt=""></td>
+                        <td class="chair"><img src="images/seat.png" alt=""></td>
+                        <td class="chair"><img src="images/seat.png" alt=""></td>
+                        <td class="chair"><img src="images/seat.png" alt=""></td>
+                        <td class="zanyato"><img src="images/seatZanyat.png" alt=""></td>
+                        <td class="zanyato"><img src="images/seatZanyat.png" alt=""></td>
+                        <td class="zanyato"><img src="images/seatZanyat.png" alt=""></td>
+                        <td class="zanyato"><img src="images/seatZanyat.png" alt=""></td>
+                        <td class="zanyato"><img src="images/seatZanyat.png" alt=""></td>
+                        <td class="zanyato"><img src="images/seatZanyat.png" alt=""></td>
+                        <td class="chair"><img src="images/seat.png" alt=""></td>
+                        <td class="chair"><img src="images/seat.png" alt=""></td>
+                        <td class="chair"><img src="images/seat.png" alt=""></td>
+                        <td class="chair"><img src="images/seat.png" alt=""></td>
+                        <td class="chair"><img src="images/seat.png" alt=""></td>
+                        <td class="chair"><img src="images/seat.png" alt=""></td>
+                        <td class="chair"><img src="images/seat.png" alt=""></td>
+                        <td class="chair"><img src="images/seat.png" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td class="chair"><img src="images/seat.png" alt=""></td>
+                        <td class="chair"><img src="images/seat.png" alt=""></td>
+                        <td class="chair"><img src="images/seat.png" alt=""></td>
+                        <td class="chair"><img src="images/seat.png" alt=""></td>
+                        <td class="chair"><img src="images/seat.png" alt=""></td>
+                        <td class="chair"><img src="images/seat.png" alt=""></td>
+                        <td class="chair"><img src="images/seat.png" alt=""></td>
+                        <td class="chair"><img src="images/seat.png" alt=""></td>
+                        <td class="chair"><img src="images/seat.png" alt=""></td>
+                        <td class="chair"><img src="images/seat.png" alt=""></td>
+                        <td class="chair"><img src="images/seat.png" alt=""></td>
+                        <td class="chair"><img src="images/seat.png" alt=""></td>
+                        <td class="chair"><img src="images/seat.png" alt=""></td>
+                        <td class="chair"><img src="images/seat.png" alt=""></td>
+                        <td class="chair"><img src="images/seat.png" alt=""></td>
+                        <td class="chair"><img src="images/seat.png" alt=""></td>
+                        <td class="chair"><img src="images/seat.png" alt=""></td>
+                        <td class="chair"><img src="images/seat.png" alt=""></td>
+                        <td class="chair"><img src="images/seat.png" alt=""></td>
+                    </tr>
                 </table>
             </div>
             <div class="tableSecondOne">
                 <div class="tableSecond">
                     <table>
                         <tr>
-                             <td class="chair"><img src="images/seat.png" alt=""></td>
-                             <td class="chair"><img src="images/seat.png" alt=""></td>
-                             <td class="chair"><img src="images/seat.png" alt=""></td>
-                             <td class="chair"><img src="images/seat.png" alt=""></td>
-                             <td class="chair"><img src="images/seat.png" alt=""></td>
-                             <td class="chair"><img src="images/seat.png" alt=""></td>
-                             <td class="chair"><img src="images/seat.png" alt=""></td>
-                             <td class="chair"><img src="images/seat.png" alt=""></td>
-                             <td class="chair"><img src="images/seat.png" alt=""></td>
-                             <td class="chair"><img src="images/seat.png" alt=""></td>
-                        </tr>
-                       <tr>
-                             <td class="zanyato"><img src="images/seatZanyat.png" alt=""></td>
-                             <td class="chair"><img src="images/seat.png" alt=""></td>
-                             <td class="chair"><img src="images/seat.png" alt=""></td>
-                             <td class="chair"><img src="images/seat.png" alt=""></td>
-                             <td class="chair"><img src="images/seat.png" alt=""></td>
-                             <td class="chair"><img src="images/seat.png" alt=""></td>
-                             <td class="chair"><img src="images/seat.png" alt=""></td>
-                             <td class="chair"><img src="images/seat.png" alt=""></td>
-                             <td class="chair"><img src="images/seat.png" alt=""></td>
-                             <td class="chair"><img src="images/seat.png" alt=""></td>
+                            <td class="chair"><img src="images/seat.png" alt=""></td>
+                            <td class="chair"><img src="images/seat.png" alt=""></td>
+                            <td class="chair"><img src="images/seat.png" alt=""></td>
+                            <td class="chair"><img src="images/seat.png" alt=""></td>
+                            <td class="chair"><img src="images/seat.png" alt=""></td>
+                            <td class="chair"><img src="images/seat.png" alt=""></td>
+                            <td class="chair"><img src="images/seat.png" alt=""></td>
+                            <td class="chair"><img src="images/seat.png" alt=""></td>
+                            <td class="chair"><img src="images/seat.png" alt=""></td>
+                            <td class="chair"><img src="images/seat.png" alt=""></td>
                         </tr>
                         <tr>
-                             <td class="chair"><img src="images/seat.png" alt=""></td>
-                             <td class="chair"><img src="images/seat.png" alt=""></td>
-                             <td class="chair"><img src="images/seat.png" alt=""></td>
-                             <td class="chair"><img src="images/seat.png" alt=""></td>
-                             <td class="chair"><img src="images/seat.png" alt=""></td>
-                             <td class="chair"><img src="images/seat.png" alt=""></td>
-                             <td class="chair"><img src="images/seat.png" alt=""></td>
-                             <td class="chair"><img src="images/seat.png" alt=""></td>
-                             <td class="chair"><img src="images/seat.png" alt=""></td>
-                             <td class="chair"><img src="images/seat.png" alt=""></td>
+                            <td class="zanyato"><img src="images/seatZanyat.png" alt=""></td>
+                            <td class="chair"><img src="images/seat.png" alt=""></td>
+                            <td class="chair"><img src="images/seat.png" alt=""></td>
+                            <td class="chair"><img src="images/seat.png" alt=""></td>
+                            <td class="chair"><img src="images/seat.png" alt=""></td>
+                            <td class="chair"><img src="images/seat.png" alt=""></td>
+                            <td class="chair"><img src="images/seat.png" alt=""></td>
+                            <td class="chair"><img src="images/seat.png" alt=""></td>
+                            <td class="chair"><img src="images/seat.png" alt=""></td>
+                            <td class="chair"><img src="images/seat.png" alt=""></td>
                         </tr>
-                       <tr>
-                             <td class="chair"><img src="images/seat.png" alt=""></td>
-                             <td class="chair"><img src="images/seat.png" alt=""></td>
-                             <td class="chair"><img src="images/seat.png" alt=""></td>
-                             <td class="zanyato"><img src="images/seatZanyat.png" alt=""></td>
-                             <td class="zanyato"><img src="images/seatZanyat.png" alt=""></td>
-                             <td class="zanyato"><img src="images/seatZanyat.png" alt=""></td>
-                             <td class="chair"><img src="images/seat.png" alt=""></td>
-                             <td class="chair"><img src="images/seat.png" alt=""></td>
-                             <td class="chair"><img src="images/seat.png" alt=""></td>
-                             <td class="chair"><img src="images/seat.png" alt=""></td>
+                        <tr>
+                            <td class="chair"><img src="images/seat.png" alt=""></td>
+                            <td class="chair"><img src="images/seat.png" alt=""></td>
+                            <td class="chair"><img src="images/seat.png" alt=""></td>
+                            <td class="chair"><img src="images/seat.png" alt=""></td>
+                            <td class="chair"><img src="images/seat.png" alt=""></td>
+                            <td class="chair"><img src="images/seat.png" alt=""></td>
+                            <td class="chair"><img src="images/seat.png" alt=""></td>
+                            <td class="chair"><img src="images/seat.png" alt=""></td>
+                            <td class="chair"><img src="images/seat.png" alt=""></td>
+                            <td class="chair"><img src="images/seat.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td class="chair"><img src="images/seat.png" alt=""></td>
+                            <td class="chair"><img src="images/seat.png" alt=""></td>
+                            <td class="chair"><img src="images/seat.png" alt=""></td>
+                            <td class="zanyato"><img src="images/seatZanyat.png" alt=""></td>
+                            <td class="zanyato"><img src="images/seatZanyat.png" alt=""></td>
+                            <td class="zanyato"><img src="images/seatZanyat.png" alt=""></td>
+                            <td class="chair"><img src="images/seat.png" alt=""></td>
+                            <td class="chair"><img src="images/seat.png" alt=""></td>
+                            <td class="chair"><img src="images/seat.png" alt=""></td>
+                            <td class="chair"><img src="images/seat.png" alt=""></td>
                         </tr>
                     </table>
                 </div>
                 <div class="tableSecond">
                     <table>
                         <tr>
-                             <td class="chair"><img src="images/seat.png" alt=""></td>
-                             <td class="chair"><img src="images/seat.png" alt=""></td>
-                             <td class="chair"><img src="images/seat.png" alt=""></td>
-                             <td class="chair"><img src="images/seat.png" alt=""></td>
-                             <td class="chair"><img src="images/seat.png" alt=""></td>
-                             <td class="chair"><img src="images/seat.png" alt=""></td>
-                             <td class="chair"><img src="images/seat.png" alt=""></td>
-                             <td class="chair"><img src="images/seat.png" alt=""></td>
-                             <td class="chair"><img src="images/seat.png" alt=""></td>
-                             <td class="chair"><img src="images/seat.png" alt=""></td>
-                        </tr>
-                       <tr>
-                             <td class="chair"><img src="images/seat.png" alt=""></td>
-                             <td class="chair"><img src="images/seat.png" alt=""></td>
-                             <td class="chair"><img src="images/seat.png" alt=""></td>
-                             <td class="chair"><img src="images/seat.png" alt=""></td>
-                             <td class="chair"><img src="images/seat.png" alt=""></td>
-                             <td class="chair"><img src="images/seat.png" alt=""></td>
-                             <td class="chair"><img src="images/seat.png" alt=""></td>
-                             <td class="chair"><img src="images/seat.png" alt=""></td>
-                             <td class="chair"><img src="images/seat.png" alt=""></td>
-                             <td class="chair"><img src="images/seat.png" alt=""></td>
+                            <td class="chair"><img src="images/seat.png" alt=""></td>
+                            <td class="chair"><img src="images/seat.png" alt=""></td>
+                            <td class="chair"><img src="images/seat.png" alt=""></td>
+                            <td class="chair"><img src="images/seat.png" alt=""></td>
+                            <td class="chair"><img src="images/seat.png" alt=""></td>
+                            <td class="chair"><img src="images/seat.png" alt=""></td>
+                            <td class="chair"><img src="images/seat.png" alt=""></td>
+                            <td class="chair"><img src="images/seat.png" alt=""></td>
+                            <td class="chair"><img src="images/seat.png" alt=""></td>
+                            <td class="chair"><img src="images/seat.png" alt=""></td>
                         </tr>
                         <tr>
-                             <td class="chair"><img src="images/seat.png" alt=""></td>
-                             <td class="chair"><img src="images/seat.png" alt=""></td>
-                             <td class="chair"><img src="images/seat.png" alt=""></td>
-                             <td class="chair"><img src="images/seat.png" alt=""></td>
-                             <td class="chair"><img src="images/seat.png" alt=""></td>
-                             <td class="chair"><img src="images/seat.png" alt=""></td>
-                             <td class="chair"><img src="images/seat.png" alt=""></td>
-                             <td class="chair"><img src="images/seat.png" alt=""></td>
-                             <td class="chair"><img src="images/seat.png" alt=""></td>
-                             <td class="chair"><img src="images/seat.png" alt=""></td>
+                            <td class="chair"><img src="images/seat.png" alt=""></td>
+                            <td class="chair"><img src="images/seat.png" alt=""></td>
+                            <td class="chair"><img src="images/seat.png" alt=""></td>
+                            <td class="chair"><img src="images/seat.png" alt=""></td>
+                            <td class="chair"><img src="images/seat.png" alt=""></td>
+                            <td class="chair"><img src="images/seat.png" alt=""></td>
+                            <td class="chair"><img src="images/seat.png" alt=""></td>
+                            <td class="chair"><img src="images/seat.png" alt=""></td>
+                            <td class="chair"><img src="images/seat.png" alt=""></td>
+                            <td class="chair"><img src="images/seat.png" alt=""></td>
                         </tr>
-                       <tr>
-                             <td class="chair"><img src="images/seat.png" alt=""></td>
-                             <td class="chair"><img src="images/seat.png" alt=""></td>
-                             <td class="chair"><img src="images/seat.png" alt=""></td>
-                             <td class="chair"><img src="images/seat.png" alt=""></td>
-                             <td class="chair"><img src="images/seat.png" alt=""></td>
-                             <td class="chair"><img src="images/seat.png" alt=""></td>
-                             <td class="chair"><img src="images/seat.png" alt=""></td>
-                             <td class="chair"><img src="images/seat.png" alt=""></td>
-                             <td class="chair"><img src="images/seat.png" alt=""></td>
-                             <td class="chair"><img src="images/seat.png" alt=""></td>
+                        <tr>
+                            <td class="chair"><img src="images/seat.png" alt=""></td>
+                            <td class="chair"><img src="images/seat.png" alt=""></td>
+                            <td class="chair"><img src="images/seat.png" alt=""></td>
+                            <td class="chair"><img src="images/seat.png" alt=""></td>
+                            <td class="chair"><img src="images/seat.png" alt=""></td>
+                            <td class="chair"><img src="images/seat.png" alt=""></td>
+                            <td class="chair"><img src="images/seat.png" alt=""></td>
+                            <td class="chair"><img src="images/seat.png" alt=""></td>
+                            <td class="chair"><img src="images/seat.png" alt=""></td>
+                            <td class="chair"><img src="images/seat.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td class="chair"><img src="images/seat.png" alt=""></td>
+                            <td class="chair"><img src="images/seat.png" alt=""></td>
+                            <td class="chair"><img src="images/seat.png" alt=""></td>
+                            <td class="chair"><img src="images/seat.png" alt=""></td>
+                            <td class="chair"><img src="images/seat.png" alt=""></td>
+                            <td class="chair"><img src="images/seat.png" alt=""></td>
+                            <td class="chair"><img src="images/seat.png" alt=""></td>
+                            <td class="chair"><img src="images/seat.png" alt=""></td>
+                            <td class="chair"><img src="images/seat.png" alt=""></td>
+                            <td class="chair"><img src="images/seat.png" alt=""></td>
                         </tr>
                     </table>
                 </div>
             </div>
-            <hr>
+            <hr class="LineLegend">
             <div class="legend">
                 <div class="main-legend">
                     <div>
-                        <div><img src="images/seat.png" alt=""></div>
+                        <div class="divImage">
+                            <img src="images/seat.png" alt="">
+                        </div>
                         <span>Свободно</span>
                     </div>
-                   <div>
-                        <div><img src="styles/images/seat.png" alt=""></div>
+                    <div>
+                        <div class="divImage">
+                            <img src="styles/images/seat.png" alt="">
+                        </div>
                         <span>Выбрано</span>
                     </div>
                     <div>
-                        <div><img src="images/seatZanyat.png" alt=""></div>
+                        <div class="divImage">
+                            <img class="zanyato" src="images/seatZanyat.png" alt="">
+                        </div>
                         <span>Занято</span>
                     </div>
                 </div>
@@ -325,9 +350,10 @@
                 <a href="">Перейти к оплате</a>
             </div>
         </div>
-        
+
     </footer>
-    
+
 </body>
 <script src="scripts/script.js"></script>
+
 </html>
