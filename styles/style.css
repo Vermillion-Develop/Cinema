@@ -1,84 +1,123 @@
+/*Стили для всех элементов*/
 *{
     margin: 0;
     /* border: solid green 1px; */
     color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
+
+/*шапка + главный экран*/
 .section_1{
     background-image: linear-gradient(rgba(98, 20, 2, 0.11), rgba(133, 3, 3, 0.9)), url(images/bg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-
+    /* background-image: url(images/bg.png); */
+    background-repeat: no-repeat;/*для того чтоб изображение не повторялось*/
+    background-position: center top;/*центрирование фона*/
+    background-size: cover;/*покрывает полнотью область элемента*/
 }
+
+/*навигация + профиль*/
 header{
     display: flex;
     justify-content: center;   
 }
+
 hr{
     border-color: rgba(220, 220, 220, 0);
     background: rgba(220, 220, 220, 0.309);
     height: 1px;
 }
+
 p{
-    font-size: 19px;
+    font-size: 16px;
+    line-height: 150%/*расстояние между строками*/
 }
+
 h1{
     font-size: 24px;
+    line-height: 150%;
+    color: rgba(255, 255, 255, 0.529);
 }
+
 h2{
-    font-size: 32px;
+    font-size: 36px;
+    line-height: 42px;
 }
+
 h1, h2{
     margin-bottom: 2.5%;
 }
+
+/*навигация*/
 .navigation{
     width: 40%;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    align-items: center;/*выравнивание элементов внутри контейнера по центру*/
     margin-top: 1.5%;
 }
+
+.menu{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.bat-nav{
+    display: none;/*убираем кнопку она нам нужна только при адаптации*/
+}
+
+/*профиль*/
 .profil{
     width: 40%;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: flex-end;/*выравнивает элементы flex-контейнера в конце контейнера*/
     margin-top: 1.5%;
-
 }
+
 header a{
     text-decoration: none;
     color: white;
     font-size: 18px;
-    transition: 0.3s;
+    transition: 0.3s;/*указание длительности перехода*/
     font-size: 1.25vw;
 }
+
 header a:hover{
     color: #FE8E05;
-    transition: 0.3s;
+    transition: 0.3s;/*указание длительности перехода*/
 }
+
 .profil p{
     color: white;
     font-size: 1.25vw;
     margin-right: 2.5%;
 }
+
+/*Главный экран*/
 main{
     padding: 7.5% 0 0;
 }
+
+/*Описание + кнопка/видео*/
 .splitPrimaryMain{
     width: 80%;
     margin: 0 auto;
     display: flex;
 }
+
 .splitMainText{
     width: 45.5%;
     text-align: justify;
 }
+
 .splitMainImg{
     width: 54.5%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .splitImg{
     display: flex;
     justify-content: center;
@@ -86,17 +125,21 @@ main{
     width: 15%;
     margin-top: -7.5%;
 }
+
 .splitImg a{
     display: flex;
 }
+
 .splitImg img{
     width: 100%;
-    transition: 0.3s;
+    transition: 0.3s;/*указание длительности перехода*/
 }
+
 .splitImg img:hover{
-    filter: saturate(0.5);
-    transition: 0.3s;
+    filter: saturate(0.5);/*насыщенность элемента*/
+    transition: 0.3s;/*указание длительности перехода*/
 }
+
 .splitTime{
     font-size: 1vw;
     width: 40%;
@@ -105,26 +148,39 @@ main{
     align-items: center;
     margin: 7% 0 10%;
 }
+
 .imgTime{
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .imgTime img{
     width: 100%;
 }
+
 .rate{
     font-size: 1.25vw;
     font-weight: bold;
 }
+
 .delitel{
     font-size: 1vw;
     margin-left: -5%;
 }
+
 hr, .cinemaInfo{
     width: 80%;
     margin: 0 auto;
 }
+
+.trailer{
+    width: 80%;
+    height: 80%;
+    display: none;
+}
+
+/*Дата + кинотеатр + время*/
 .cinemaInfo{
     display: flex;
     padding: 2% 0;
@@ -147,12 +203,12 @@ hr, .cinemaInfo{
     width: 17.5%;
     margin-top: 5%;
     display: flex;
-    flex-direction: column;
+    flex-direction: column;/*элементы располагаются вертикально в контейнере*/
     align-items: center;
     border: solid white 1px;
     border-radius: 5px;
-    cursor: pointer;
-    user-select: none;
+    cursor: pointer;/* внешний вид курсора в виде руки*/
+    user-select: none;/*запрещает выделение текста*/
     transition: 0.2s;
 }
 .date p, .cinema p, .time p{
@@ -183,24 +239,29 @@ option{
     align-items: center;
     height: 70%;
 }
-footer{
-    background: linear-gradient(rgba(127, 3, 3, 0.985), rgb(118, 2, 2));
-    padding: 5%;
-}
+
 .select1 .selectAdress{
     width: 80%;
 }
+
+/*Схема зала + цена*/
+footer{
+    background: linear-gradient(rgba(127, 3, 3, 0.985), rgb(118, 2, 2));
+    /* background: #621402; */
+    padding: 5%;
+}
+
 .sit{
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 86%;
     margin: 0 auto;
-    padding: 2.5% 0 5%;
+    padding: 2.5% 1% 5%;
     background: rgba(78, 1, 1, 0.681);
     border-radius: 10px;
 }
 .sit img{
-    width: 85%;
+    width: 95%;
     margin: 0 auto;
 }
 .sit hr{
@@ -210,11 +271,17 @@ footer{
     border-color: rgba(78, 1, 1, 0);
     background: rgb(59, 1, 1);
     height: 5px;
-    width: 95%;
+    width: 100%;
     margin-top: 0;
 }
+
+.LightScreen{
+    width: 90%;
+    margin: 0 auto;
+}
+
 table{
-    user-select: none;
+    user-select: none;/*запрещает выделение текста*/
 }
 .tableSecondOne{
     display: flex;
@@ -234,7 +301,7 @@ table{
 }
 input[type="radio"]{
     display: none;
-}
+}/*радиокнопку (переключатель)*/
 
 input[type="radio"]:checked + .day{
   background: #FE8E05;
@@ -260,8 +327,43 @@ td img{
     width: 100%;
     padding: 7.5% 0 7.5%;
 }
+
+.LineLegend{
+    width: 90%;
+}
+
+.legend{
+    display: flex;
+    width: 90%;
+    justify-content: flex-start;
+    margin: 3% auto 0;
+}
+.main-legend{
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+}
+
+.main-legend div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-legend div span{
+    margin-left: 5%;
+    font-size: 1vw;
+}
+.divImage{
+    width: 100%;
+}
+
+.divImage img{
+    width: 75%;
+}
+
 .itogo{
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
     display: flex;
     margin-top: 2.5%;
@@ -287,27 +389,142 @@ td img{
     font-size: 50px;
 }
 
-.legend{
-    display: flex;
-    width: 90%;
-    justify-content: flex-start;
-    margin: 3% auto 0;
-}
-.main-legend{
-    display: flex;
-    width: 40%;
-    justify-content: space-between;
-}
 
-.main-legend div{
-    display: flex;
-    justify-content: space-between;
-}
+/*медиа запросы для адаптивности сайта*/
+@media (max-width: 1200px ){
+    .navigation, .profil{
+        width: 45%;
+    }
 
-.main-legend div span{
-    padding-left: 5%;
-}
+    .splitMainText{
+        width: 60%;
+    }
 
-.main-legend div div img{
-    width: 80%;
-}
+    .splitMainImg{
+        width: 40%;
+    }
+
+    .splitPrimaryMain, .cinemaInfo, hr{
+        width: 90%;
+    }
+
+    .sit, .itogo{
+        width: 95%;
+    }
+}/*изменение ширины контейнеров*/
+
+@media(max-width: 720px){
+    h1{
+        font-size: 4vw;
+    }
+    h2{
+        font-size: 5vw;
+    }
+    p{
+        font-size: 3vw;
+    }
+
+    header a{
+        font-size: 3vw;
+    }
+
+    .bat-nav {
+        font-size: 3vw;
+        display: block;
+        background-color: transparent;;
+        border: none;
+        color: #ffffff;
+        cursor: pointer;
+    }
+    .navigation{
+        justify-content: flex-start;
+    }
+    .menu{
+        display: none;
+    }
+
+    .is-open{
+        display: flex;
+        border-radius: 5%;
+        padding: 1%;
+        width: 20%;
+        position: absolute;
+        flex-direction: column;
+        left: 10%;
+        top: 7%;
+        background-color: #621402;
+    }
+
+    .is-open a{
+        padding: 2%;
+    }
+
+    .profil p{
+        font-size: 3vw;
+    }
+
+    .splitPrimaryMain{
+        flex-direction: column;
+        align-items: center;
+    }
+    .trailer{
+        width: 100%;
+        height: 300px;
+    }
+
+    .splitMainText{
+        width: 100%;
+    }
+    .splitTime{
+        width: 100%;
+    }
+    .splitTime, .rate, .delitel{
+        font-size: 3vw;
+    }
+    .cinemaInfo{
+        flex-direction: column;
+        align-items: center;
+    }
+    .date, .cinema, .time{
+        width: 100%;
+        padding-top: 5%;
+    }
+    .day p{
+        font-size: 3vw;
+    }
+    .day span{
+        font-size: 3vw;
+    }
+    select{
+        font-size: 3vw;
+    }
+    .date p, .cinema p, .time p{
+        font-size: 3vw;
+        padding-bottom: 5%;
+    }
+    
+    footer{
+        padding: 2%;
+    }
+    .sit{
+        width: 90%;
+        height: 50%;
+        margin: auto;
+    }
+    .splitMainImg{
+        width: 100%;
+        padding: 10% 0;
+    }
+
+    .main-legend{
+        width: 90%;
+        
+    }
+    .divImage{
+        width: 30%;
+    }
+
+    .main-legend div span{
+        font-size: 3vw;
+    }
+}/*изменение вида контейнеров для лучшего отражения на телефонах*/
