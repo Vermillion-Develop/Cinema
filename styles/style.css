@@ -49,3 +49,119 @@ header a{
     font-size: 20px;
     margin-right: 2.5%;
 }
+main{
+    padding: 7.5% 0 0;
+}
+.splitPrimaryMain{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+}
+.splitMainText{
+    width: 45.5%;
+    text-align: justify;
+}
+.splitMainImg{
+    width: 54.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.splitImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    margin-top: -7.5%;
+}
+.splitImg a{
+    display: flex;
+}
+.splitImg img{
+    width: 100%;
+    transition: 0.3s;
+}
+.splitImg img:hover{
+    filter: saturate(0.5);
+    transition: 0.3s;
+}
+.splitTime{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 7% 0 10%;
+}
+.imgTime{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgTime img{
+    width: 100%;
+}
+.rate{
+    font-size: 20px;
+    font-weight: bold;
+}
+.delitel{
+    margin-left: -5%;
+}
+hr, .cinemaInfo{
+    width: 80%;
+    margin: 0 auto;
+}
+.cinemaInfo{
+    display: flex;
+    padding: 2% 0;
+    justify-content: space-between;
+}
+.cinema{
+    width: 40%;
+}
+.date{
+    width: 30%;
+}
+.time{
+    width: 20%;
+}
+.chislo{
+    display: flex;
+    justify-content: space-between;
+}
+.day{
+    width: 17.5%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid white 1px;
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+    transition: 0.2s;
+}
+.date span{
+    font-size: 28px;
+    font-weight: bold;
+}
+.day:hover{
+    background: rgb(255, 128, 0);
+    transition: 0.2s;
+}
+
+select{
+    background: rgba(202, 200, 200, 0.25);
+    border: solid white 1px;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 15px;
+}
+option{
+    background: rgb(63, 63, 63);
+}
+.select1{
+    display: flex;
+    align-items: center;
+    height: 70%;
+}
